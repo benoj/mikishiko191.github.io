@@ -1,239 +1,266 @@
-#-----------------------
-# Main Page Settings
-#-----------------------
-
-# Nav logo Settings
 nav_logo:
-- {
-    logo_main: 'logo.png',
-    logo_dark: 'logo-dark.png',
-    alt: 'Olive'
-}
-
-# Main Menu ( Landign Page )
+  - logo_main: logo.png
+    logo_dark: logo-dark.png
+    alt: Olive
 menu_landing:
-- {name: Home, url: '/'}
-- {name: How it works, url: '#about'}
-- {name: Features, url: '#featured1'}
-- {name: Pricing, url: '/pricing'}
-- {name: About Us, url: '/about'}
-- {name: Testimonials, url: '/testimonials'}
-- {name: Blog, url: '/blogs'}
-
-# Page Menu ( Menu For All Pages )
+  - name: Home
+    url: /
+  - name: How it works
+    url: '#about'
+  - name: Features
+    url: '#featured1'
+  - name: Pricing
+    url: /pricing
+  - name: About Us
+    url: /about
+  - name: Testimonials
+    url: /testimonials
+  - name: Blog
+    url: /blogs
 menu_page:
-- {name: Home, url: '/'}
-- {name: Pricing, url: '/pricing'}
-- {name: About Us, url: '/about'}
-- {name: Testimonials, url: '/testimonials'}
-- {name: Blog, url: '/blogs'}
-
-# Main Section
+  - name: Home
+    url: /
+  - name: Pricing
+    url: /pricing
+  - name: About Us
+    url: /about
+  - name: Testimonials
+    url: /testimonials
+  - name: Blog
+    url: /blogs
 main_section:
-- {title: 'Find hidden gems in your city',
-  description: 'Olive helps you connect with your local community to find those hidden gems you wish you already knew.',
-  button_url: '#!',
-  img_url: 'devices/device-iphone-1.png'
-}
-
-# How it works Section
+  - title: Find hidden gems in your city
+    description: >-
+      Olive helps you connect with your local community to find those hidden
+      gems you wish you already knew.
+    button_url: '#!'
+    img_url: devices/device-iphone-1.png
 about_section:
-- { icon: 'icon-location-pin',
-    title: 'Enter your location',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-layers',
-    title: 'Select what you re interested in',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-speech',
-    title: 'Connect with your community',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-
-
-# Featured Section
+  - icon: icon-location-pin
+    title: Enter your location
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-layers
+    title: Select what you re interested in
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-speech
+    title: Connect with your community
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 featured_section:
-- {title: 'Easy to use &amp; intuitive design',
-  description: 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-  button_url: '#!',
-  img_url: 'featured-img-2.png'
-}
-
-# Featured2 Section
+  - title: Easy to use &amp; intuitive design
+    description: >-
+      Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
+      porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque
+      nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    button_url: '#!'
+    img_url: featured-img-2.png
 featured2_section:
-- {title: 'Every detail perfected for you',
-  description: 'Every detail perfected for you Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-  button_url: '#!',
-  img_url: 'devices/device-macbook-2.png'
-}
-
-# featured3 Section
+  - title: Every detail perfected for you
+    description: >-
+      Every detail perfected for you Donec ullamcorper nulla non metus auctor
+      fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+      commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+      tellus ac cursus commodo.
+    button_url: '#!'
+    img_url: devices/device-macbook-2.png
 featured3_section:
-- {title: 'Every detail perfected for you',
-  description: 'Every detail perfected for you Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.',
-  background_img_url: 'bg-featured-1.jpg'
-}
-
-# Pricing Section
+  - title: Every detail perfected for you
+    description: >-
+      Every detail perfected for you Donec ullamcorper nulla non metus auctor
+      fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+      commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+      tellus ac cursus commodo.
+    background_img_url: bg-featured-1.jpg
 pricing_section:
-- { plan: '',
-    title: 'Beginner',
-    price: '0',
-    user: '1 user',
-    projects: '5 projects',
-    storage: '2GB storage',
-    btn_url: '#!'}
-- { plan: '',
-    title: 'Advanced',
-    price: '47',
-    user: '5 user',
-    projects: '15 projects',
-    storage: '250GB storage',
-    btn_url: '#!'}
-- { plan: 'featured',
-    title: 'Pro',
-    price: '147',
-    user: '50 user',
-    projects: 'Unlimited projects',
-    storage: 'Unlimited storage',
-    btn_url: '#!'}
-- { plan: '',
-    title: 'Enterprise',
-    price: '199',
-    user: 'Unlimited user',
-    projects: 'Unlimited projects',
-    storage: 'Unlimited storage',
-    btn_url: '#!'}
-
-# Pricing Page Faq Section
+  - plan:
+    title: Beginner
+    price: '0'
+    user: 1 user
+    projects: 5 projects
+    storage: 2GB storage
+    btn_url: '#!'
+  - plan:
+    title: Advanced
+    price: '47'
+    user: 5 user
+    projects: 15 projects
+    storage: 250GB storage
+    btn_url: '#!'
+  - plan: featured
+    title: Pro
+    price: '147'
+    user: 50 user
+    projects: Unlimited projects
+    storage: Unlimited storage
+    btn_url: '#!'
+  - plan:
+    title: Enterprise
+    price: '199'
+    user: Unlimited user
+    projects: Unlimited projects
+    storage: Unlimited storage
+    btn_url: '#!'
 faq:
-- { title: 'Can I cancel my subscription?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-- { title: 'What type of credit cards do you accept?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-- { title: 'Do you have a free trial?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-- { title: 'What currencies do you support?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-- { title: 'Do you have a support team if I need help?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-- { title: 'Do you have an enterprise plan?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-
-# Testimonials Section
+  - title: Can I cancel my subscription?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+  - title: What type of credit cards do you accept?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+  - title: Do you have a free trial?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+  - title: What currencies do you support?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+  - title: Do you have a support team if I need help?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+  - title: Do you have an enterprise plan?
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
 testimonials_section:
-- { img_url: 'user-avatar1.jpg',
-    name: 'David Parrelli',
-    founder_title: 'Founder of HealthCoach',
-    description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!'}
-- { img_url: 'user-avatar2.jpg',
-    name: 'Christian Bale',
-    founder_title: 'Actor',
-    description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!'}
-- { img_url: 'user-avatar3.jpg',
-    name: 'Sandra Hayes',
-    founder_title: 'CEO at VR Tech',
-    description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!'}
-- { img_url: 'user-avatar4.jpg',
-    name: 'Samuel Johnston',
-    founder_title: 'Manager at Swirly Inc.',
-    description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!'}
-
-# Extra Features Section
+  - img_url: user-avatar1.jpg
+    name: David Parrelli
+    founder_title: Founder of HealthCoach
+    description: >-
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+      consectetur, adipisci velit!
+  - img_url: user-avatar2.jpg
+    name: Christian Bale
+    founder_title: Actor
+    description: >-
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+      consectetur, adipisci velit!
+  - img_url: user-avatar3.jpg
+    name: Sandra Hayes
+    founder_title: CEO at VR Tech
+    description: >-
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+      consectetur, adipisci velit!
+  - img_url: user-avatar4.jpg
+    name: Samuel Johnston
+    founder_title: Manager at Swirly Inc.
+    description: >-
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+      consectetur, adipisci velit!
 extra_features:
-- { icon: 'icon-layers',
-    title: 'Sky s the limit',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-screen-desktop',
-    title: 'Big Ideas',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-drop',
-    title: 'Creative Execution',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-layers',
-    title: Sky's the limit,
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-screen-desktop',
-    title: 'Big Ideas',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-drop',
-    title: 'Creative Execution',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-
-# Footer Section
+  - icon: icon-layers
+    title: Sky s the limit
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-screen-desktop
+    title: Big Ideas
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-drop
+    title: Creative Execution
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-layers
+    title: Sky's the limit
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-screen-desktop
+    title: Big Ideas
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-drop
+    title: Creative Execution
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 footer_first_column:
-- {name: Pricing, url: '#!'}
-- {name: Testimonials, url: '#!'}
-- {name: Download, url: '#!'}
-
-# second Column of Footer
+  - name: Pricing
+    url: '#!'
+  - name: Testimonials
+    url: '#!'
+  - name: Download
+    url: '#!'
 footer_second_column:
-- {name: About Us, url: '#!'}
-- {name: Contact Us, url: '#!'}
-- {name: We're hiring!, url: '#!'}
-
-# third Column of Footer
+  - name: About Us
+    url: '#!'
+  - name: Contact Us
+    url: '#!'
+  - name: We're hiring!
+    url: '#!'
 footer_third_column:
-- {name: Terms of Service, url: '#!'}
-- {name: Privacy Policy, url: '#!'}
-- {name: Code of Conduct, url: '#!'}
-
-# forth Column of Footer
+  - name: Terms of Service
+    url: '#!'
+  - name: Privacy Policy
+    url: '#!'
+  - name: Code of Conduct
+    url: '#!'
 footer_forth_column:
-- {name: 1024 Main Street Vancouver BC +1 (123) 456-7890}
-- {name: © 2017 Olive Inc.}
-
-
-
-###############  About Page ###############
-
-# Our Core Values Section
+  - name: 1024 Main Street Vancouver BC +1 (123) 456-7890
+  - name: © 2017 Olive Inc.
 our_core_values:
-- { icon: 'icon-layers',
-    title: 'Personal Accountability',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-drop',
-    title: 'Strive to be the best',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-screen-desktop',
-    title: 'Teamwork',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-- { icon: 'icon-rocket',
-    title: 'Get your hands dirty',
-    description: 'Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.'}
-
-# Meet Our Team Section
+  - icon: icon-layers
+    title: Personal Accountability
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-drop
+    title: Strive to be the best
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-screen-desktop
+    title: Teamwork
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  - icon: icon-rocket
+    title: Get your hands dirty
+    description: Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
 meet_our_team:
-- { img_url: 'user-avatar3.jpg',
-    name: 'David Parrelli',
-    working: 'Product Manager',
-    description: 'Insatiable appetite for all things digital. Product guy. Founder of <a href="https://healthcoach.io" target="blank">@HealthCoachApp</a>. Footballer and diehard Manchester United fan',
-    twitter: '#!',
-    facebook: ,
-    linkedin: }
-- { img_url: 'user-avatar5.jpg',
-    name: 'Pete Burg',
-    working: 'UI Designer',
-    description: 'Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat.',
-    twitter: '#!',
-    facebook: ,
-    linkedin: }
-- { img_url: 'user-avatar6.jpg',
-    name: 'John Hilton',
-    working: 'Senior Developer',
-    description: 'Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat.',
-    twitter: '#!',
-    facebook: ,
-    linkedin: }
-- { img_url: 'user-avatar1.jpg',
-    name: 'Tracy Wheeler',
-    working: 'Senior Developer',
-    description: 'Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat.',
-    twitter: '#!',
-    facebook: ,
-    linkedin: }
-- { img_url: 'user-avatar4.jpg',
-    name: 'Adrian Filloti',
-    working: 'Senior Developer',
-    description: 'Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam commodo neque erat.',
-    twitter: '#!',
-    facebook: ,
-    linkedin: }
+  - img_url: user-avatar3.jpg
+    name: Ben Flowers
+    working: Product Manager
+    description: >-
+      Insatiable appetite for all things digital. Product guy. Founder of <a
+      href="https://healthcoach.io" target="blank">@HealthCoachApp</a>.
+      Footballer and diehard Manchester United fan
+    twitter: '#!'
+    facebook:
+    linkedin:
+  - img_url: user-avatar5.jpg
+    name: Pete Burg
+    working: UI Designer
+    description: >-
+      Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac
+      habitasse platea dictumst. Nullam commodo neque erat.
+    twitter: '#!'
+    facebook:
+    linkedin:
+  - img_url: user-avatar6.jpg
+    name: John Hilton
+    working: Senior Developer
+    description: >-
+      Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac
+      habitasse platea dictumst. Nullam commodo neque erat.
+    twitter: '#!'
+    facebook:
+    linkedin:
+  - img_url: user-avatar1.jpg
+    name: Tracy Wheeler
+    working: Senior Developer
+    description: >-
+      Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac
+      habitasse platea dictumst. Nullam commodo neque erat.
+    twitter: '#!'
+    facebook:
+    linkedin:
+  - img_url: user-avatar4.jpg
+    name: Adrian Filloti
+    working: Senior Developer
+    description: >-
+      Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac
+      habitasse platea dictumst. Nullam commodo neque erat.
+    twitter: '#!'
+    facebook:
+    linkedin:

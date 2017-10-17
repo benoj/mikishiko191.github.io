@@ -1,0 +1,29 @@
+<!-- Pricing
+================================================== -->
+<section id="pricing" class="tp--section tp--pricing tp--pricing-1">
+  <div class="page-header text-center tp--title-overlay">
+    <h2 data-title="Pricing"><span class="editable">Pricing</span></h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="plans clearfix">
+        {% for item in site.data.settings.pricing_section %}
+          <div class="col-xs-12 col-sm-6 col-md-3 plan {{ item.plan }}" data-scrollreveal="enter over 1s">
+            <div class="plan-title">
+              <h2>{{ item.title }}</h2>
+              <h3><sup>$</sup>{{ item.price }}<sub>/ month</sub></h3>
+            </div>
+            <ul class="plan-features">
+              <li>{{ item.user }}</li>
+              <li>{{ item.projects }}</li>
+              <li>{{ item.storage }}</li>
+            </ul>
+            <div class="plan-cta">
+              <p class="plan-buy"><a href="{{ item.btn_url }}" class="btn btn-primary">Select plan</a></p>
+           </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

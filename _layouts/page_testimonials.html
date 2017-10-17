@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% include nav/header_nav_page.html %}
+{% include page_sections/inner_page_header.html %}
+
+<!-- Content
+================================================== -->
+<section id="tagline" class="tp--section p-top-sm-100 p-bottom-sm-50">
+  <div class="container" data-aos="fade-up" data-aos-duration="750">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="row">
+          <div class="col-sm-12">
+            <blockquote class="blockquote-styled blockquote-large text-center">
+              <p>{{ page.tagline }}</p>
+              <footer>{{ page.author }}</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials
+================================================== -->
+<section id="testimonials" class="tp--section tp--testimonials tp--testimonials-2 text-center text-sm-left tp--padding-top-0">
+  <div class="container">
+    <div class="row">
+      {% include main/testimonials.html %}
+    </div>
+  </div>
+</section>

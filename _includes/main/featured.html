@@ -1,0 +1,54 @@
+<!-- Featured Sections
+================================================== -->
+<section id="featured1" class="tp--section tp--featured tp--diagonal tp--diagonal-1">
+  <div class="container">
+    <div class="row tp--col-sm-vertical-align">
+      {% for item in site.data.settings.featured_section %}
+        <div class="col-md-5 text-center text-md-left">
+          <h2 class="title">{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <a class="btn btn-primary editable" href="{{ item.button_url }}" role="button">Learn more</a>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <img src="{{ site.baseurl }}/images/{{ item.img_url }}" class="img-responsive" alt="">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Featured Sections
+================================================== -->
+<section id="featured2" class="tp--section tp--featured tp--section-with-bg tp--section-with-bg p-top-md-200 p-bottom-md-200 tp--no-background-sm tp--no-background-xs" style="background-image: url('images/devices/device-macbook-2.png'); background-size: 65%; background-position: -200px center;">
+  <div class="container">
+    <div class="row tp--col-sm-vertical-align">
+      {% for item in site.data.settings.featured2_section %}
+        <div class="col-md-5 col-md-offset-6 text-center text-md-left">
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <a class="btn btn-primary editable" href="{{ item.button_url }}" role="button">Learn more</a>
+        </div>
+        <div class="col-sm-12 visible-sm visible-xs">
+          <img src="{{ site.baseurl }}/images/{{ item.img_url }}" class="img-responsive" alt="">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Featured Sections
+================================================== -->
+{% for item in site.data.settings.featured3_section %}
+  <section id="featured3" class="tp--section tp--section-with-bg-overlay tp--featured tp--parallax text-xs-center p-top-md-200 p-bottom-md-200" style="background-image: url('{{ site.baseurl }}/images/{{ item.background_img_url }}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-5">
+          <h2 class="title">{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endfor %}

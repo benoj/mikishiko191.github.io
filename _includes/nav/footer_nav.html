@@ -1,0 +1,55 @@
+<!-- Footer
+================================================== -->
+<footer id="footer" class="tp--footer tp--section-dark tp--gradient-3 tp--footer-1 text-xs-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <h3 class="editable">Product</h3>
+        <ul class="list-unstyled">
+          {% for item in site.data.settings.footer_first_column %}
+            <li>
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3">
+        <h3 class="editable">Company</h3>
+        <ul class="list-unstyled">
+          {% for item in site.data.settings.footer_second_column %}
+            <li>
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3">
+        <h3 class="editable">Legal</h3>
+        <ul class="list-unstyled">
+          {% for item in site.data.settings.footer_third_column %}
+            <li>
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3">
+        <h3 class="editable">Contact us</h3>
+        {% for item in site.data.settings.footer_forth_column %}
+          <p>{{ item.name }}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row tp--social">
+      <div class="col-lg-12 text-center">
+        {% include svg-icons.html %}
+      </div>
+    </div>
+
+  </div>
+
+</footer>

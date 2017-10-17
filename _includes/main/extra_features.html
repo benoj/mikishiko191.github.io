@@ -1,0 +1,20 @@
+<!-- Extra Features Section
+================================================== -->
+<section id="features" class="tp--section tp--features text-left text-xs-center">
+  <div class="page-header text-center tp--title-overlay">
+    <h2 data-title="Features"><span class="editable">Extra Features</span></h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      {% for item in site.data.settings.extra_features %}
+        <div class="col-sm-4 tp--feature">
+          <div class="tp--icon-wrapper">
+            <i class="tp--icon-gradient {{ item.icon }} icon-small"></i>
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p> {{ item.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

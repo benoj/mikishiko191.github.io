@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% include nav/header_nav_page.html %}
+<!-- Inner Page Header
+================================================== -->
+<section class="tp--inner-header tp--section tp--section-dark tp--gradient-3 tp--pattern-7 tp--height-50 text-center">
+  <div class="container tp--vertical-align">
+    <div class="row">
+      <div class="col-xs-12">
+        <p style="font-size: 1.8em;">{{ page.title }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="single_post" class="tp--section">
+  <div class="container">
+    <article class="single_post">
+
+      <div class="entry">
+        {{ content }}
+      </div>
+
+      <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
+      <br>
+      <a href="{{ site.baseurl }}/blogs" class="btn btn-lg btn-primary">Back to Blog</a>
+      {% include disqus.html %}
+    </article>
+  </div>
+</section>

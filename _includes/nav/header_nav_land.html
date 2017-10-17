@@ -1,0 +1,53 @@
+<!-- HEADER For Landing
+================================================== -->
+
+<header class="tp--header tp--header-fixed tp--header-shrink tp--header-1">
+  <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+  <nav class="navbar-wrapper">
+    <div class="container clearfix">
+
+      <!-- LOGO
+      ================================================== -->
+      {% for item in site.data.settings.nav_logo %}
+        <h1 class="logo">
+          <a href="/">
+            <img src="{{ site.baseurl }}/images/{{ item.logo_main }}" class="logo-main" alt="{{ item.alt }}">
+            <img src="{{ site.baseurl }}/images/{{ item.logo_dark }}" class="logo-dark" alt="{{ item.alt }}">
+          </a>
+        </h1>
+      {% endfor %}
+
+
+      <!-- NAVIGATION
+      ================================================== -->
+
+      <div class="navbar tp--nav-dropdown pull-right">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {% for item in site.data.settings.menu_landing %}
+              <li>
+                <a href="{{ item.url }}" class="tp--scroll">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dropdown Wrapper -->
+      <div class="morph-dropdown-wrapper">
+        <div class="morph-dropdown-container">
+          <div class="dropdown-list text-center">
+            <ul>
+              {% for item in site.data.settings.menu_landing %}
+                <li class="links">
+                  <a href="{{ item.url }}" class="tp--nav-label">{{ item.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+            <div class="bg-layer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

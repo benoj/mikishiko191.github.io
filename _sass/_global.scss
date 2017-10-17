@@ -1,0 +1,21 @@
+
+#single_post {
+  .single_post {
+    max-width: 750px;
+    margin: 0 auto;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    blockquote {
+      background-color: transparent;
+      border-left: 3px solid #2F80ED;
+      letter-spacing: normal;
+      margin: 1.2rem 0;
+      overflow: hidden;
+      padding: .6rem 1.2rem;
+      text-transform: none;
+    }
+  }
+}

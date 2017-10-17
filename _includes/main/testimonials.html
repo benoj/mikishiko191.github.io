@@ -1,0 +1,22 @@
+{% for item in site.data.settings.testimonials_section %}
+  <div class="col-md-6">
+    <div class="tp--floating-box tp--hover-1">
+      <div class="row tp--testimonial-header tp--col-sm-vertical-align">
+        <div class="col-sm-3">
+          <img class="img-circle img-responsive" src="{{ site.baseurl }}/images/{{ item.img_url }}">
+        </div>
+        <div class="col-sm-9 tp--padding-0">
+          <h4>{{ item.name }}</h4>
+          <p>{{ item.founder_title }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <blockquote>
+            <p>"{{ item.description }}"</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
